@@ -24,7 +24,7 @@ sqft = st.text_input("Enter total house area in sqft", "")
 bath = st.text_input("Enter number of bathroom(s)", "")
 balcony = st.text_input("Enter number of balcony(ies)", "")
 
-# Predict button
+# Predict button to new location 
 if st.button("Predict Price"):
     if location and bhk and sqft and bath and balcony:
         prediction = predict_price(float(sqft), int(bath), int(balcony), location, int(bhk))
